@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Custom Element Hider",
+  "version": "1.0",
+  "description": "Hide or blur elements matching user-defined keywords.",
+  "permissions": ["storage", "scripting"],
+  "host_permissions": ["*://*.nyaa.si/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.nyaa.si/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<body>
+  <h3>Keywords (one per line):</h3>
+
+  <!-- Keyword list textarea -->
+  <textarea id="keywords"></textarea>
+
+  <!-- Add single keyword -->
+  <div style="margin-top: 10px;">
+    <input type="text" id="newKeyword" placeholder="Add new keyword" style="width: 70%;">
+    <button id="addBtn" style="width: 28%;">Add</button>
+  </div>
+
+  <!-- Save entire list -->
+  <button id="save" style="margin-top: 10px; width: 100%;">Save All</button>
+
+  <script src="popup.js"></script>
+</body>
